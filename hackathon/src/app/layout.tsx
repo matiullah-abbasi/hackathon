@@ -17,13 +17,16 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-        <Providers>
-      <body className={inter.className} >
-      <Header/>
+             <body className={inter.className} >
+             <Providers>
+<Header/>
+     
+ 
       <div className='px-28'> {children} </div>
+      </Providers>
       </body>
       <Footer/>
-      </Providers>
+      
      
     </html>
   )
